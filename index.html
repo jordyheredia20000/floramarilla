@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <3</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <!-- Modal oculto -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-modal">&times;</span>
+      <div class="modal-container">
+        <button id="btnAceptar" class="modal-button">¿Segura de salir?</button>
+        <button id="btnMostrarFlor" class="modal-button">¿Una flor?</button>
+        <button id="btnMontonFlores" class="modal-button">Montón de flores</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nuevo modal con contenedor para el GIF y botón de regresar -->
+  <div id="modalFlor" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-modal-flor">&times;</span>
+      <h1 style="text-align: center; font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    ;">Para vos, una bonita flor amarilla</h1>
+      <div class="modal-container">
+        <div class="gif-container">
+          <img
+            src="https://1.bp.blogspot.com/-yNOJRp4uyV0/WcVkdWyk62I/AAAAAAAGrCs/nDRmPDvkn1MnG-kvMpkgBZbizb3dSpRuQCLcBGAs/s1600/FLORES%2B%2528241%2529.gif"
+            alt="Flor amarilla" class="gif-flor">
+        </div>
+        <button id="btnRegresar" class="modal-button">Regresar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nuevo modal con 10 veces el GIF y botón de regresar -->
+  <div id="modalMontonFlores" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-modal-monton-flores">&times;</span>
+      <h1 style="text-align: center; font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;">¡Ten más
+        flores amarillas!</h1>
+      <div class="modal-container">
+        <div class="gif-container">
+          <!-- Agregar el GIF 10 veces -->
+          <img
+            src="https://1.bp.blogspot.com/-yNOJRp4uyV0/WcVkdWyk62I/AAAAAAAGrCs/nDRmPDvkn1MnG-kvMpkgBZbizb3dSpRuQCLcBGAs/s1600/FLORES%2B%2528241%2529.gif"
+            alt="Flor amarilla" class="gif-flor" id="gifMontonFlores">
+          <img
+            src="https://1.bp.blogspot.com/-yNOJRp4uyV0/WcVkdWyk62I/AAAAAAAGrCs/nDRmPDvkn1MnG-kvMpkgBZbizb3dSpRuQCLcBGAs/s1600/FLORES%2B%2528241%2529.gif"
+            alt="Flor amarilla" class="gif-flor" id="gifMontonFlores2">
+          <img
+            src="https://1.bp.blogspot.com/-yNOJRp4uyV0/WcVkdWyk62I/AAAAAAAGrCs/nDRmPDvkn1MnG-kvMpkgBZbizb3dSpRuQCLcBGAs/s1600/FLORES%2B%2528241%2529.gif"
+            alt="Flor amarilla" class="gif-flor" id="gifMontonFlores3">
+          <img
+            src="https://1.bp.blogspot.com/-yNOJRp4uyV0/WcVkdWyk62I/AAAAAAAGrCs/nDRmPDvkn1MnG-kvMpkgBZbizb3dSpRuQCLcBGAs/s1600/FLORES%2B%2528241%2529.gif"
+            alt="Flor amarilla" class="gif-flor" id="gifMontonFlores">
+          <img
+            src="https://1.bp.blogspot.com/-yNOJRp4uyV0/WcVkdWyk62I/AAAAAAAGrCs/nDRmPDvkn1MnG-kvMpkgBZbizb3dSpRuQCLcBGAs/s1600/FLORES%2B%2528241%2529.gif"
+            alt="Flor amarilla" class="gif-flor" id="gifMontonFlores">
+          <img
+            src="https://1.bp.blogspot.com/-yNOJRp4uyV0/WcVkdWyk62I/AAAAAAAGrCs/nDRmPDvkn1MnG-kvMpkgBZbizb3dSpRuQCLcBGAs/s1600/FLORES%2B%2528241%2529.gif"
+            alt="Flor amarilla" class="gif-flor" id="gifMontonFlores">
+          <img
+            src="https://1.bp.blogspot.com/-yNOJRp4uyV0/WcVkdWyk62I/AAAAAAAGrCs/nDRmPDvkn1MnG-kvMpkgBZbizb3dSpRuQCLcBGAs/s1600/FLORES%2B%2528241%2529.gif"
+            alt="Flor amarilla" class="gif-flor" id="gifMontonFlores">
+            <img
+            src="https://1.bp.blogspot.com/-yNOJRp4uyV0/WcVkdWyk62I/AAAAAAAGrCs/nDRmPDvkn1MnG-kvMpkgBZbizb3dSpRuQCLcBGAs/s1600/FLORES%2B%2528241%2529.gif"
+            alt="Flor amarilla" class="gif-flor" id="gifMontonFlores">
+        </div>
+        <button id="btnRegresarMontonFlores" class="modal-button">Regresar</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>

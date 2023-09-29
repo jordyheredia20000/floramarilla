@@ -1,0 +1,267 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: lightyellow;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  color: black;
+}
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.vanilla:hover {
+  filter: drop-shadow(0 0 2em #3178c6aa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* src/style.css */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-heart-header {
+  width: 50px; /* Tamaño de la imagen de corazón en el encabezado */
+  height: auto; /* Altura automática para mantener la proporción */
+  position: absolute;
+  top: -20px; /* Ajusta la posición verticalmente */
+}
+
+.heart-container-alert {
+  text-align: center;
+}
+
+.icon-heart-alert {
+  width: 100px; /* Tamaño de la imagen de corazón en el cuadro de diálogo */
+  height: auto; /* Altura automática para mantener la proporción */
+  margin-bottom: 20px; /* Espaciado inferior */
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* Oculta el modal de forma predeterminada */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  z-index: 1;
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* style.css */
+.modal {
+  display: none;
+  /* Estilos para el modal, como posición, fondo, etc. */
+}
+
+/* Agrega estos estilos al final de tu archivo CSS */
+.modal-container {
+  display: flex;
+  justify-content: space-between; /* Distribuye equitativamente el espacio entre los botones */
+}
+
+.modal-button {
+  flex: 1; /* Hace que los botones ocupen el mismo espacio disponible */
+  margin: 0 5px; /* Espacio entre los botones */
+  text-align: center; /* Centra el texto dentro de los botones */
+}
+
+/* MODAL FLOR */
+
+/* Estilos para el contenedor del GIF */
+.gif-container {
+  text-align: center;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para el GIF de la flor */
+.gif-flor {
+  max-width: 50%; /* Ajusta el ancho máximo al tamaño del contenedor */
+  max-height: 250px; /* Define una altura máxima para el GIF */
+  align-items: center;
+  justify-content: center;
+  margin-left: 75px;
+}
+
+/* Estilos para el modal de la flor */
+#modalFlor {
+  padding-bottom: 100px;
+  display: none; /* Oculta el modal de forma predeterminada */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+  max-width: 100%; /* Tamaño máximo del modal */
+  align-items: center;
+  justify-content: center;
+}
+
+#btnRegresar {
+  background-color: #1a1a1a; /* Color de fondo amarillo */
+  color: white; /* Color del texto */
+  margin-top: 10px;
+  border: none; /* Quita el borde del botón */
+  border-radius: 4px; /* Agrega bordes redondeados */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  cursor: pointer;
+  transition: background-color 0.25s;
+  font-family: inherit;
+  max-width: 50%; /* Ancho máximo del botón */
+  align-self: center; /* Centra verticalmente el botón */
+  margin-right: 100px;
+}
+
+/* MOTÓN FLORES */
+
+/* Estilos para el modal "Montón de Flores" */
+#modalMontonFlores {
+  padding-bottom: 250px;
+  display: none; /* Oculta el modal de forma predeterminada */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centra vertical y horizontalmente */
+  max-width: 100%; /* Tamaño máximo del modal */
+  align-items: center;
+  justify-content: center;
+
+}
+
+#modalMontonFlores h1 {
+  text-align: center;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+#modalMontonFlores .gif-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Espacio entre los GIFs */
+}
+
+#modalMontonFlores .gif-flor {
+  max-width: 100px; /* Tamaño máximo de los GIFs */
+  height: auto;
+}
+
+#modalMontonFlores #btnRegresarMontonFlores {
+  background-color: #1a1a1a; /* Color de fondo amarillo */
+  color: white; /* Color del texto */
+  margin-top: 10px;
+  border: none; /* Quita el borde del botón */
+  border-radius: 4px; /* Agrega bordes redondeados */
+  font-size: 14px; /* Tamaño de fuente más pequeño */
+  cursor: pointer;
+  transition: background-color 0.25s;
+  font-family: inherit;
+  max-width: 50%; /* Ancho máximo del botón */
+  align-self: center; /* Centra verticalmente el botón */
+  margin-right: 50px;
+  margin-left: 50px;
+}
